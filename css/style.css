@@ -27,8 +27,8 @@ html, body{
     color: #088D10;
     text-transform: uppercase;
     font-size: 50px;
-    letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: bold;
+    font-family: 'Paytone One', sans-serif;
 }
 
 .inner img{
@@ -55,6 +55,7 @@ html, body{
     padding: 0;margin: 0 10px;
     transition: all 0.3s ease-in-out;
     border-bottom: 2px solid transparent;
+    
 }
 
 .m-link:hover{
@@ -97,6 +98,7 @@ html, body{
     text-align: center;
     margin:50px 0 50px 0;
     font-size: 80px;
+    text-shadow: 1px 1px 2px rgb(180, 180, 180);
 }
 
 hr{
