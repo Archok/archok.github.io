@@ -128,14 +128,15 @@
     <nav class="menu">
       <div class="inner">
         <div class="m-left">
-          <img src="img/tree-1578.svg">
+          <a href="index.html"> 
+          <img src="img/tree-1578.svg"></a>
           <h1 class="logo">CFM</h1>
         </div>
         <div class="m-right">
           <a href="accueil.php" class="m-link"><i class="fas fa-home"></i> Accueil</a>
           <a href="#lehr" class="m-link"><i class="fas fa-question-circle"></i> Présentation</a>
           <a href="actu.php" class="m-link"><i class="fas fa-info-circle"></i></i> Actualités</a>
-          <a href="#Document" class="m-link"><i class="fas fa-file"></i> Document</a>
+          <a href="document.php" class="m-link"><i class="fas fa-file"></i> Document</a>
           <a href="#Contact" class="m-link"><i class="fas fa-envelope"></i> Contact</a>
         </div>
       </div>
