@@ -8,7 +8,7 @@
     <style>
       html, body{
         font-family: 'Roboto',sans-serif;
-        margin-bottom: 75px;
+        margin-bottom: 75px;margin:0;
       }
 
       .inner{
@@ -22,7 +22,8 @@
           height: 75px;
           line-height: 75px;
           position: fixed;
-        z-index: 9999;
+          top: 0;
+          
       }
 
       .logo{
@@ -99,7 +100,6 @@
         position: fixed;
         top: 74px;
         left: 0;
-        z-index: 9999;
       }
 
       #cop{
@@ -124,25 +124,22 @@
       })
     }
   </script>
-  <body>
-    
-    <header>
-      <nav class="menu">
-        <div class="inner">
-          <div class="m-left">
-            <img src="img/tree-1578.svg">
-            <h1 class="logo">CFM</h1>
-          </div>
-          <div class="m-right">
-            <a href="index.html" class="m-link"><i class="fas fa-home"></i> Accueil</a>
-            <a href="#Présentation" class="m-link"><i class="fas fa-question-circle"></i> Présentation</a>
-            <a href="#Actualités" class="m-link"><i class="fas fa-info-circle"></i></i> Actualités</a>
-            <a href="#Document" class="m-link"><i class="fas fa-file"></i> Document</a>
-            <a href="#Contact" class="m-link"><i class="fas fa-envelope"></i> Contact</a>
-          </div>
+  <header>
+    <nav class="menu">
+      <div class="inner">
+        <div class="m-left">
+          <img src="img/tree-1578.svg">
+          <h1 class="logo">CFM</h1>
         </div>
-      </nav>
+        <div class="m-right">
+          <a href="accueil.php" class="m-link"><i class="fas fa-home"></i> Accueil</a>
+          <a href="#lehr" class="m-link"><i class="fas fa-question-circle"></i> Présentation</a>
+          <a href="actu.php" class="m-link"><i class="fas fa-info-circle"></i></i> Actualités</a>
+          <a href="#Document" class="m-link"><i class="fas fa-file"></i> Document</a>
+          <a href="#Contact" class="m-link"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+      </div>
+    </nav>
     <div id="progress"></div>
-
-    </header>
+  </header>
 </html>
