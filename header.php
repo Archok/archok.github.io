@@ -17,29 +17,23 @@
       }
 
       .menu{
-          background: #E0E0E0;
+          background: #FFFFFF;
           width: 100%;
-          height: 75px;
-          line-height: 75px;
+          height: 100px;
           position: fixed;
           top: 0;
           
       }
 
-      .logo{
-          margin: 0;
-          padding: 0;
-          color: #088D10;
-          text-transform: uppercase;
-          font-size: 50px;
-          font-weight: bold;
-          font-family: 'Paytone One', sans-serif;
+      #logo{
+          height: 100px;
+          width: 100px;
       }
 
       .inner img{
-          height: 50px;
-          width: 50px;
-          margin: 10px 25px 10px 0px;
+          height: 30px;
+          width: 30px;
+          margin:0px 5px -5px 0px;
       }
       .m-left{
           float: left;
@@ -48,27 +42,28 @@
       }
 
       .m-right{
-          float: right;
-          font-size: 20px;
+          font-size: 22.5px;
+          float:right;
       }
 
       .m-link{
           text-decoration: none;
-          color: #088D10;
+          color: #4e9e4b;
           text-transform: uppercase;
           font-weight: 700;
           padding: 0;margin: 0 10px;
           transition: all 0.3s ease-in-out;
           border-bottom: 2px solid transparent;
           
+          
       }
-
       .m-link:hover{
           padding-bottom: 3px;
-          border-color: #088D10;
+          border-color: #4e9e4b;
       }
       .m-link i{
           margin-right: 5px;
+          color: #575027;
       }
 
       .container{
@@ -82,28 +77,17 @@
       #foret{
           height: auto;
           width: 100%;
-          margin-top: 75px;
+          margin-top: 100px;
       }
 
       div.container:target{
-          padding-top: 75px;
-          margin-top: -75px;
+          padding-top: 100px;
+          margin-top: -100px;
       }
 
-
-      /* barre de progression */
-
-      #progress{
-        background-color: #088D10;
-        height: 3px;
-        width: 0;
-        position: fixed;
-        top: 74px;
-        left: 0;
-      }
 
       #cop{
-          color: #088D10;
+          color: #4e9e4b;
           text-transform: uppercase;
           font-weight: 900;
           text-align: center;
@@ -111,36 +95,116 @@
           font-size: 80px;
           text-shadow: 1px 1px 2px rgb(180, 180, 180);
       }
+
+      .m-right > ul:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .m-right > ul > li{
+        float: left;
+        line-height: 60px;
+        position: relative;
+      }
+
+
+      .m-right li {list-style-type: none;}
+
+      .submenu{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+      }
+
+      .submenu a{
+        display: inline-block;
+        text-decoration: none;
+        width: 270px;
+      }
+
+      .submenu li a{
+        font-weight: 400;
+        font-size: 15px;
+        color: #4e9e4b;
+        width: auto;
+        padding: 5px 5px 0px 5px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+      }
+      li:hover .submenu  {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 10px;
+        padding: 0px;
+        z-index: 1000;
+        background-color: #FFFFFF;
+      }
+
+      .submenu li{
+        border-bottom: 2px solid #4e9e4b;
+        padding-bottom: -15px;
+      }
+
+      .s-link{
+        width: 150px;
+      }
+      .s-link:hover{
+        transform: scale(1.01);
+      }
+
+      .m-right > ul li:hover .submenu{
+        display: block;
+      }
+
+      nav{
+        position: sticky;
+      }
     </style>
   </head>
-  <script>
-    window.onload = () => {
-    window.addEventListener("scroll", () => {
-        let hauteur = document.documentElement.scrollHeight - window.innerHeight
-        let position = window.scrollY
-        let largeur = document.documentElement.clientWidth
-        let barre = position / hauteur * largeur
-        document.getElementById("progress").style.width = barre+"px"
-      })
-    }
-  </script>
   <header>
     <nav class="menu">
       <div class="inner">
         <div class="m-left">
-          <a href="index.html"> 
-          <img src="img/tree-1578.svg"></a>
-          <h1 class="logo">CFM</h1>
+          <a href="accueil.php"> 
+          <img id="logo" src="img/cfm.jpg">
+          </a>
         </div>
         <div class="m-right">
-          <a href="accueil.php" class="m-link"><i class="fas fa-home"></i> Accueil</a>
-          <a href="#lehr" class="m-link"><i class="fas fa-question-circle"></i> Présentation</a>
-          <a href="actu.php" class="m-link"><i class="fas fa-info-circle"></i></i> Actualités</a>
-          <a href="document.php" class="m-link"><i class="fas fa-file"></i> Document</a>
-          <a href="#Contact" class="m-link"><i class="fas fa-envelope"></i> Contact</a>
+          <ul>
+            <li class="titre"> 
+              <a href="accueil.php#lehr" class="m-link"><i class="fas fa-question-circle"></i> Qui sommmes-nous ?</a>
+              <ul class="submenu">
+                <li><a href="accueil.php#Présentation" class="s-link">Présentation</a></li>
+              </ul>
+            </li>
+          
+            <li class="titre">
+              <a href="activité.php" class="m-link"> <img src="img/Oak Tree-595b40b75ba036ed117d7c11.svg"> Activités</a>
+              <ul class="submenu">
+                <li><a href="#" class="s-link" >Ventes de bois</a></li>
+                <li><a href="#" class="s-link">Services</a></li>
+                <li><a href="#" class="s-link">Approvisionement</a></li>
+              </ul>
+            </li>
+
+            <li class="titre">
+              <a href="actu.php" class="m-link"><i class="fas fa-info-circle"></i> Actualités</a>
+            </li>
+
+            <li class="titre">
+              <a href="document.php" class="m-link"><i class="fas fa-file"></i> Document</a>
+            </li>
+            
+            <li class="titre">
+              <a href="#Contact" class="m-link"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+          </ul>
+          
         </div>
       </div>
     </nav>
-    <div id="progress"></div>
   </header>
 </html>
