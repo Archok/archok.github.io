@@ -1,29 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-#fil{
-    width: 100%;
-    height: 50px;
-    background-color: #c5c5c5;
-    font-family:'Ubuntu', sans-serif;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-align: center;
-    padding-top: 1px;
-}
-#g{
-    width: 400px;
-    height: 802px;
-    background-color: #088D10;
-    padding: 5px 0 5px 0;
-}
-
 #container{
     margin-top: 100px;
     margin-bottom: -100px;
+    display: flex;
+    flex-direction: row;
 }
 
 body html{margin: 0;}
 
+.g {
+    width: 21.4%;
+    height: 828px;
+    background-image: url(../img/Photo/foretmenu.jpg);
+    padding: 5px 0 5px 0;
+    position: fixed;
+}
 .g > ul{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -32,20 +24,92 @@ body html{margin: 0;}
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    width: 390px;
+    width: 397px;
     padding-left: 5px;
 }
 
 .g > ul > li{
     display: flex;
     padding: 10px 20px;
-    background: #007007;
+    background: #4e9e4b;
     margin: 5px 0;
     transition: .5s;
+	text-align: justify;
 }
 
 .g > ul > li:hover
 {
     transform: scale(1.02);
-    background:#006607;
+    background:#397237;
+}
+
+span.titre{
+	width:250px;
+	text-align: left;
+}
+.colonne{
+	display: flex;
+	flex-direction: column;
+	float: right;
+	text-align: right;
+}
+
+.liste{
+	text-decoration: none;
+	color: white;
+}
+
+#d{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 21.4%;
+}
+
+.title{
+    width: 100%;
+    background-color: #4e9e4b;
+    color: white;
+    height: 90px;
+    line-height: 50px;
+}
+
+.title img{
+    width: 100%;
+}
+.content{
+
+    background-color: rgb(250, 255, 250);
+    margin-top: 300px;
+}
+.content > .auteur{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+padding-left: 33%;
+
+    font-size: 20px;
+}
+
+.auteur i{
+    line-height: 60px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.texte{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    font-size: 20px;
+}
+
+.texte h1{
+    margin-bottom: 50px;
+}
+
+.texte p{
+    margin-bottom: 20px;
+    text-align:justify ;
 }

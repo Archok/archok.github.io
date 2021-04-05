@@ -1,0 +1,147 @@
+body{
+    margin-top: 100px;
+    margin-bottom: -100px;    
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    padding-top: 50px;
+}
+
+#textarea
+{
+ resize : none;
+}
+
+:root {
+  --input-border: #088D10;
+  --input-focus-h: 120;
+  --input-focus-s: 40%;
+  --input-focus-l: 20%;
+}
+
+.input {
+  font-size: 20px;
+  width: 350px;
+  height: 30px;  font-size: Max(20px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+.input:focus {
+  border-color: hsl(
+    var(--input-focus-h),
+    var(--input-focus-s),
+    var(--input-focus-l)
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8
+    );
+  outline: 3px solid transparent;
+}
+
+.input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+input[type="file"] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.input[readonly] {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.input[disabled] {
+  --input-border: #ccc;
+
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.input + label {
+  margin-top: 2rem;
+}
+
+#identifiant{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+#text-input{
+    margin: 30px;
+    padding: 5px;
+}
+
+h2 {
+    color: #458d43;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#textarea{
+  width: 765px;
+  height: 250px;
+}
+
+#button{
+    color: #fff;
+    background-color: #4e9e4b;
+    padding:15px 25px;
+    font-size:24px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 9px #41833e;
+    border:none;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+#button:hover{
+    transform: translateY(3px);
+    box-shadow:0 6px #41833e;
+}
+
+#button:active{
+    transform: translateY(7px);
+    box-shadow: 0 2px #41833e;
+}
+
+#message{
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ff0800;
+}

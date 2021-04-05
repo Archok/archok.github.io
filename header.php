@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <style>
       html, body{
@@ -22,7 +21,7 @@
           height: 100px;
           position: fixed;
           top: 0;
-          
+          border-bottom: solid 3px #4e9e4b;
       }
 
       #logo{
@@ -33,7 +32,7 @@
       .inner img{
           height: 30px;
           width: 30px;
-          margin:0px 5px -5px 0px;
+          margin:0px 5px -6px 0px;
       }
       .m-left{
           float: left;
@@ -129,7 +128,7 @@
         color: #4e9e4b;
         width: auto;
         padding: 5px 5px 0px 5px;
-        font-weight: 500;
+        font-weight: 700;
         text-transform: uppercase;
 
       }
@@ -152,7 +151,7 @@
         width: 150px;
       }
       .s-link:hover{
-        transform: scale(1.01);
+        transform: scale(1.02);
       }
 
       .m-right > ul li:hover .submenu{
@@ -182,7 +181,7 @@
             </li>
           
             <li class="titre">
-              <a href="activité.php" class="m-link"> <img src="img/Oak Tree-595b40b75ba036ed117d7c11.svg"> Activités</a>
+              <a href="activités.php" class="m-link"> <img src="img/Oak Tree-595b40b75ba036ed117d7c11.svg"> Activités</a>
               <ul class="submenu">
                 <li><a href="#" class="s-link" >Ventes de bois</a></li>
                 <li><a href="#" class="s-link">Services</a></li>
@@ -199,7 +198,7 @@
             </li>
             
             <li class="titre">
-              <a href="#Contact" class="m-link"><i class="fas fa-envelope"></i> Contact</a>
+              <a href="contact.php" class="m-link"><i class="fas fa-envelope"></i> Contact</a>
             </li>
           </ul>
           
