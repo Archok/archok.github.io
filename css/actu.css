@@ -87,8 +87,7 @@ span.titre{
     display: flex;
     flex-direction: row;
     text-align: center;
-padding-left: 33%;
-
+    padding-left: 33%;
     font-size: 20px;
 }
 
